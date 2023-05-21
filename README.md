@@ -7,6 +7,6 @@ The program gets price from yfinance package, the rest of financial data from Fu
 Finally most recent freeCashFlow and CAGR (Compound Annual Growth Rate) of Price/Revenue/EPS/freeCashFlow are collected and calculated. Then results are exported to excel spreadsheet with proper format.
 
 # Improvement of second commit Stock fundamental analysis
-FundamentalAnalysis package is using Financial Modeling Prep API, which only provide 5 years growth data. Monthly subscription is needed for all years data.
-I noticed that free subscription also provides all years data for Revenue/EPS/freeCashFlow, so CAGR can be calculated accordingly.
+FundamentalAnalysis package is using Financial Modeling Prep API, which only provide 5 years data of Revenue/EPS/freeCashFlow. Monthly subscription is needed for all years data.
+I noticed that free subscription also provides all years data for growth of Revenue/EPS/freeCashFlow, so all years data of Revenue/EPS/freeCashFlow can be calculated based on growth data, and CAGR can be calculated accordingly.
 New function update_per_growth is added to fulfill above requirement.
