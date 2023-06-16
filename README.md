@@ -1,8 +1,17 @@
 # **Stock fundamental analysis**
 Per fundamental analysis model, in order to calculate intrinsic value of a stock, we need to bring in all necessary financial data.  
 The program gets price from yfinance package, other financial data from [FundamentalAnalysis package](https://pypi.org/project/fundamentalanalysis).  
-Then most recent freeCashFlow and CAGR (Compound Annual Growth Rate) of Price/Revenue/EPS/freeCashFlow are collected and calculated. Then results are exported to excel spreadsheet with proper format.
-Three charts by plotly (graph_objects) is proivded to show stock price & other fundamental analysis in visual form.
+Charts by plotly (graph_objects) show data in visual form.
+
+<img src="./images/AAPL%20price%20chart.png" width="700" />
+
+Then stock's fundamental financial data is collected through fundamentalanalysis package.
+<img src="./images/AAPL%20fundamental%20growth%20chart.png" width="700" />
+
+Finally CAGR (Compound Annual Growth Rate) of Price/Revenue/EPS/freeCashFlow are calculated and shown in chart.
+<img src="./images/AAPL%20Compound%20Annual%20Growth%20Rate.png" width="700" />
+
+Then results are exported to excel spreadsheet with proper format.
 
 ## Improvement on second commit:  update_per_growth()
 FundamentalAnalysis package is using Financial Modeling Prep API, which only provide 5 years data of Revenue/EPS/freeCashFlow. Monthly subscription is needed for all years data.  
